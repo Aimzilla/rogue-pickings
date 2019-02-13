@@ -16,7 +16,7 @@ body {
 	align-items: center;
 }
 
-.container{
+.container {
 	max-width: 1200px;
 	width: 90%;
 	display: flex;
@@ -33,15 +33,19 @@ h4 {
 	text-transform: uppercase;
 	font-weight: 700;
 }
+
 h1 {
 	font-size: 1.875em;
 }
+
 h2 {
     font-size: 1.5em;
 }
+
 h3 {
 	font-size: 1.125em;
 }
+
 h4 {
 	font-size: .75em;
 }
@@ -71,6 +75,7 @@ header h1 {
 	border-bottom: 3px solid #77a466;
   width: 100%;
 }
+
 header h1 span {
 	color: #77a466;
 }
@@ -79,10 +84,12 @@ header nav {
 	padding: 20px 0;
 	width: 100%;
 }
+
 header nav ul {
 	margin: 0;
 	padding: 0;
 }
+
 header nav ul li {
 	text-transform: uppercase;
 	font-weight: 700;
@@ -90,6 +97,7 @@ header nav ul li {
 	padding: 10px 0;
 	list-style: none;
 }
+
 header nav ul li a {
 	text-decoration: none;
 	color:#77a466;
@@ -103,24 +111,17 @@ header nav ul li a {
 	flex-flow: row wrap;
 }
 
-/*.main-image {
-	height: auto;
-}*/
-
 .main-image img {
 	width: 100%;
 	border-bottom: 3px solid #77a466;
 }
-
-/*.main-title {
-	height: auto;
-}*/
 
 .main-title h3 {
 	text-align: left;
 	padding: 5px 0;
 	color: #77a466;
 }
+
 .main-title p {
 	padding: 0;
 	font-size: 1em;
@@ -131,28 +132,14 @@ header nav ul li a {
 .section-two,
 .section-three {
 	width: 100%;
-/*	height: auto;*/
 	border-top: 1px solid #eee;
 }
-
-/*.section-one h4 {
-	padding: 10px 0;
-}*/
-
-/*.section-two {
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}*/
-
-/*.section-two h4,
-.section-three h4 {
-	padding: 10px 30px;
-}*/
 
 .menu {
 	list-style: none;
 	padding: 0;
 }
+
 .menu li {
 	padding: 10px 0;
 	color:#77a466;
@@ -184,4 +171,25 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: .875em;
+}
+
+/*** TABLET STYLING ***/
+@media only screen and (min-width: 768px) {
+	.bottom-section {
+		justify-content: space-between;
+		align-items: flex-start;
+		border-top: 1px solid #eee;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 30%;
+	}
+
+	.section-two {
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+		padding: 0 15px;
+	}
 }
