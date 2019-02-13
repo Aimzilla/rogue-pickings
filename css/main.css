@@ -193,3 +193,26 @@ footer span {
 		padding: 0 15px;
 	}
 }
+
+/*** DESKTOP STYLING ***/
+@media only screen and (min-width: 1200px) {
+	header {
+		flex-wrap: nowrap;
+	}
+
+	header h1 {
+		justify-content: flex-start;
+		border-bottom: none;
+		text-align: left;
+		padding: 38px 0;
+	}
+
+	header nav {
+		justify-content: flex-end;
+	}
+
+	header nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
